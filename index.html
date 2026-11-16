@@ -59,6 +59,14 @@
       letter-spacing: .1em;
       text-transform: uppercase;
     }
+    .site-link {
+      display: inline-block;
+      margin-top: .75rem;
+      color: var(--accent);
+      font-weight: 700;
+      text-decoration: none;
+    }
+    .site-link:hover { text-decoration: underline; }
     h1 { margin: 0; font-size: clamp(2rem, 5vw, 3.2rem); line-height: 1.13; letter-spacing: -.035em; }
     .byline { margin: .8rem 0 0; color: var(--muted); }
     .badges { display: flex; flex-wrap: wrap; gap: .55rem; margin: 1.3rem 0 0; padding: 0; list-style: none; }
@@ -108,6 +116,8 @@
     .license-card li { padding-left: .2rem; margin: .35rem 0; }
     .legal-caps { font-weight: 750; }
     footer { padding: 0 0 2.5rem; color: var(--muted); font-size: .88rem; }
+    .footer-link { color: var(--accent); text-decoration: none; font-weight: 700; }
+    .footer-link:hover { text-decoration: underline; }
     #plain-license { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: pre; border: 0; }
 
     @media print {
@@ -127,6 +137,7 @@
   <div class="container">
     <header>
       <p class="eyebrow">NexGen Corp. · License published November 16th, 2026</p>
+      <a class="site-link" href="https://nxgcorp.dpdns.org" target="_blank" rel="noopener noreferrer">NexGen Corp. Main Site</a>
       <h1>NexGen ADPS License</h1>
       <p class="byline">Version 1.0 · Copyright © 2026 NexGen Corp.</p>
       <ul class="badges" aria-label="License highlights">
@@ -188,7 +199,7 @@
     </main>
 
     <footer>
-      <p>Copyright © 2026 NexGen Corp. This page presents the NexGen ADPS License, Version 1.0.</p>
+      <p>Copyright © 2026 NexGen Corp. This page presents the NexGen ADPS License, Version 1.0. Visit the <a class="footer-link" href="https://nxgcorp.dpdns.org" target="_blank" rel="noopener noreferrer">NexGen Corp. homepage</a>.</p>
     </footer>
   </div>
 
